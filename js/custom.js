@@ -53,7 +53,10 @@ myform.submit(function(event){
   myform.find("button").text("Sending...");
   emailjs.send(service_id,template_id,params)
   	.then(function(){ 
-       alert("Thank you for your email. I will be contact you shortly.");
+	   alert("Thank you for your email. I will contact you shortly.");
+	   $("#message")[0].value = ""
+	   $("#email")[0].value = ""
+	   $("#name")[0].value = ""
        myform.find("button").text("Send");
      }, function(err) {
        alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
