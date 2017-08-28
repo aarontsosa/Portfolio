@@ -315,7 +315,7 @@ hr {
       bottom: 0;
       min-width: 100%; 
       min-height: 100%;
-      width: auto; 
+      /* width: auto;  */
       height: auto;
       z-index: -100;
     }
@@ -749,13 +749,10 @@ Parallax
     .brand-heading {
         font-size: 100px;
     }
-	
 
     .intro-text {
         font-size: 25px;
     }
-
-
 }
 @media (max-width:768px) {
 	
@@ -793,5 +790,9 @@ Parallax
 		border-radius: 50%;
 		font-size: 20px;
 	}
-	
+     
+    video {
+        width: 600px;
+        height: auto;
+    }
 }
