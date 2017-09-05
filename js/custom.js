@@ -64,3 +64,8 @@ myform.submit(function(event){
     });
   return false;
 });
+
+$('#myTabs a').click(function (e) {
+	e.preventDefault()
+	$(this).tab('show')
+  })
