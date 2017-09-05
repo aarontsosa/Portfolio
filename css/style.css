@@ -367,6 +367,11 @@ hr {
 --- About
 ============================ */
 
+.boxed-white {
+    background: #ffffff;
+	padding: 20px;
+}
+
 .boxed-grey {
 	background: #f9f9f9;
 	padding: 20px;
